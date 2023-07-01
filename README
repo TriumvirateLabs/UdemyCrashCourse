@@ -1,0 +1,78 @@
+Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the code, change into the language's relevant directory (for example, cd ~/Udemy/Ada) and run the relevant command.
+
+NOTES:
+     Dart: You must instead cd with `cd ~/Udemy/Dart/hello`
+     Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
+
+Ada
+gnatmake hello.adb && ./hello
+
+Agda
+agda --compile hello.agda && ./hello
+
+BQN
+BQN hello.bqn
+
+Chapel
+chpl hello.chpl -o hello && ./hello
+
+CPlusPlus
+g++ hello.cpp -o hello -Wall -Wextra -Werror -std=c++20 && ./hello
+
+CSharp
+dotnet run
+
+Dart
+dart run
+
+Eiffel
+ec hello.e && ./hello
+
+Elixir
+elixir hello.exs
+
+Erlang
+erl
+c(hello).
+hello:main().
+
+Factor
+factor hello.factor
+
+Fortran
+
+Go
+
+Haskell
+
+Julia
+
+Koka
+
+Mercury
+
+Mojo
+
+Ocaml
+
+OccamPi
+
+Perl
+
+Pharo
+
+Racket
+
+Roc
+
+Ruby
+
+Rust
+
+SuperCollider
+
+Swift
+
+TypeScript
+
+Zig
