@@ -40,26 +40,35 @@ Factor
 factor hello.factor
 
 Fortran
+gfortran hello.90 -o hello && ./hello
 
 Go
+go run .
 
 Haskell
+ghc -dynamic hello.hs && ./hello
 
 Julia
+julia hello.jl
 
 Koka
+koka hello.kk && .koka/v2.4.0/gcc-debug/hello
 
 Mercury
 
 Mojo
+python hello.py
 
 Ocaml
+ocaml hello.ml
 
 OccamPi
 
 Perl
+perl hello.pl
 
 Pharo
+pharo Pharo.image hello.st
 
 Racket
 
