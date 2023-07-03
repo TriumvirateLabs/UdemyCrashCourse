@@ -3,6 +3,7 @@ Welcome! Getting started with this image is very simple. Each of the 30 installe
 NOTES:
      Dart: You must instead cd with `cd ~/Udemy/Dart/hello`
      Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
+     SuperCollider: Two starter scripts (hello1.scd and hello2.scd) are provided. After running each, you'll need to exit the session with CTRL + C
 
 Ada
 gnatmake hello.adb && ./hello
@@ -55,6 +56,7 @@ Koka
 koka hello.kk && .koka/v2.4.0/gcc-debug/hello
 
 Mercury
+mmc --make hello && ./hello
 
 Mojo
 python hello.py
@@ -63,6 +65,7 @@ Ocaml
 ocaml hello.ml
 
 OccamPi
+occbuild --program hello.occ && ./hello
 
 Perl
 perl hello.pl
@@ -71,17 +74,26 @@ Pharo
 pharo Pharo.image hello.st
 
 Racket
+racket hello.rkt
 
 Roc
+roc dev hello.roc
 
 Ruby
+ruby hello.rb
 
 Rust
+rustc hello.rs && ./hello
 
 SuperCollider
+sclang hello1.scd
+sclang hello2.scd
 
 Swift
+swift hello.swift
 
 TypeScript
+~/.deno/bin/deno run hello.ts
 
 Zig
+zig build run
