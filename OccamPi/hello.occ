@@ -1,5 +1,5 @@
-#USE "course.lib"
+#INCLUDE "course.lib"
 
-PROC main (CHAN BYTE scr!)
-  SEQ
-    out.string("Hello, world!*n", 0, scr)
+PROC hello (CHAN BYTE out!)
+  out.string ("Hello, world!*n", 0, out!)
+:
