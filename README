@@ -1,9 +1,9 @@
-Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the code, change into the language's relevant directory (for example, cd ~/Udemy/Ada) and run the relevant command.
+Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the starter code, change into the language's directory (for example, cd ~/CrashCourse/Ada) and run the relevant command.
 
 NOTES:
-     Dart: You must instead cd with `cd ~/Udemy/Dart/hello`
+     Dart: You must instead cd with `cd ~/CrashCourse/Dart/hello`
      Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
-     SuperCollider: Two starter scripts (hello1.scd and hello2.scd) are provided. After running each, you'll need to exit the session with CTRL + C
+     SuperCollider: Two starter scripts (hello1.scd and hello2.scd) are provided. After running each, you'll need to exit the session with CTRL C
 
 Ada
 gnatmake hello.adb && ./hello
