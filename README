@@ -3,6 +3,7 @@ Welcome! Getting started with this image is very simple. Each of the 30 installe
 NOTES:
      Dart: You must instead cd with `cd ~/CrashCourse/Dart/hello`
      Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
+     OccamPi: This language is still being modernized, so an alternative Docker image must be used for now
      SuperCollider: Two starter scripts (hello1.scd and hello2.scd) are provided. After running each, you'll need to exit the session with CTRL C
 
 Ada
