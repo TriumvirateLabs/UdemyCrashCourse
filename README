@@ -41,7 +41,7 @@ Factor
 factor hello.factor
 
 Fortran
-gfortran hello.90 -o hello && ./hello
+gfortran hello.f90 -o hello && ./hello
 
 Go
 go run .
@@ -53,7 +53,7 @@ Julia
 julia hello.jl
 
 Koka
-koka hello.kk && .koka/v2.4.0/gcc-debug/hello
+koka hello.kk && .koka/v2.4.2/gcc-debug/hello
 
 Mercury
 mmc --make hello && ./hello

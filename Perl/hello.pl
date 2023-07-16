@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-use stricts;
+use strict;
 use warnings;
 
 print("Hello, world!\n");
