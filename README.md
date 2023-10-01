@@ -1,12 +1,11 @@
 Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the starter code, change into the language's directory (for example, `cd /home/root/CrashCourse/Ada`) and run the relevant command. There's also a convenient script to execute all* of the `Hello, world!`s located in `/home/root` (the same directory you load into when running this image) named `sanity_check.sh`. To execute it, run `bash sanity_check.sh`.
 
-*Erlang, Occam-π, and SuperCollider are not included in this script so must be run manually.
+*Erlang and Occam-π are not included in this script, so they must be run manually.
 
 NOTES:
      Dart: You must instead cd with `cd /home/root/CrashCourse/Dart/hello`
      Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
      OccamPi: This language is still being modernized, so an alternative [Docker image](https://hub.docker.com/r/thron/doccam) must be used for now
-     SuperCollider: Two starter scripts (hello1.scd and hello2.scd) are provided. After running each, you'll need to exit the session with CTRL C
 
 Ada
 gnatmake hello.adb && ./hello
@@ -28,6 +27,9 @@ dotnet run
 
 Dart
 dart run
+
+Dex
+dex script hello.dx
 
 Eiffel
 ec hello.e && ./hello
@@ -79,24 +81,20 @@ pharo Pharo.image hello.st
 Racket
 racket hello.rkt
 
-Roc
-roc dev hello.roc
-
 Ruby
 ruby hello.rb
 
 Rust
 rustc hello.rs && ./hello
 
-SuperCollider
-sclang hello1.scd
-sclang hello2.scd
-
 Swift
 swift hello.swift
 
 TypeScript
 deno run hello.ts
+
+UIUA
+uiua run hello.ua
 
 Zig
 zig build run
