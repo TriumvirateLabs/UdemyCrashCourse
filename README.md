@@ -5,7 +5,7 @@ Welcome! Getting started with this image is very simple. Each of the 30 installe
 NOTES:
      Dart: You must instead cd with `cd /home/root/CrashCourse/Dart/hello`
      Erlang: Scripts are executed in an interactive shell. To exit the shell, type `init:stop().`
-     OccamPi: This language is still being modernized, so an alternative [Docker image](https://hub.docker.com/r/thron/doccam) must be used for now
+     OccamPi: This language is still being modernized, so an alternative [Docker image](https://hub.docker.com/repository/docker/triumviratelabs/occambackup/general) must be used for now
 
 Ada
 gnatmake hello.adb && ./hello
