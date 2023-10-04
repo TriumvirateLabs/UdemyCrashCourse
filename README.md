@@ -91,7 +91,7 @@ Swift
 swift hello.swift
 
 TypeScript
-deno run hello.ts
+bun hello.ts
 
 UIUA
 uiua run hello.ua
