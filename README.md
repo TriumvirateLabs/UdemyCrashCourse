@@ -32,7 +32,7 @@ Dex
 dex script hello.dx
 
 Eiffel
-ec hello.e && ./hello
+ec hello.e && sudo chmod u+x hello && ./hello
 
 Elixir
 elixir hello.exs
