@@ -1,4 +1,4 @@
-Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the starter code, change into the language's directory (for example, `cd /home/root/CrashCourse/Ada`) and run the relevant command. There's also a convenient script to execute all* of the `Hello, world!`s located in `/home/root` (the same directory you load into when running this image) named `sanity_check.sh`. To execute it, run `bash sanity_check.sh`.
+Welcome! Getting started with this image is very simple. Each of the 30 installed languages has a dedicated directory with a starter file you can run. Below are the commands to execute each of these files. To run the starter code, change into the language's directory (for example, `cd /home/root/CrashCourse/Ada`) and run the relevant command. There's also a convenient script to execute all* of the `Hello, world!`s located right here in this directory named `sanity_check.sh`. To execute it, run `bash sanity_check.sh`.
 
 *Erlang and Occam-π are not included in this script, so they must be run manually.
 
@@ -97,4 +97,4 @@ UIUA
 uiua run hello.ua
 
 Zig
-zig build run
+zig run hello.zig
