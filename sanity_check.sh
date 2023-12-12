@@ -27,4 +27,4 @@ echo -e "\n\n=============== Swift ===============\n\n" && cd ../Swift && swift 
 echo -e "\n\n=============== TypeScript ===============\n\n" && cd ../TypeScript && bun hello.ts && \
 echo -e "\n\n=============== UIUA ===============\n\n" && cd ../UIUA && uiua run hello.ua && \
 echo -e "\n\n=============== Zig ===============\n\n" && cd ../Zig && zig run hello.zig && \
-cd $originalWorkingDirectory
+echo && cd $originalWorkingDirectory
