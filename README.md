@@ -10,9 +10,6 @@ NOTES:
 Ada
 gnatmake hello.adb && ./hello
 
-Agda
-agda --compile hello.agda && ./hello
-
 BQN
 BQN hello.bqn
 
@@ -48,6 +45,9 @@ factor hello.factor
 Fortran
 gfortran hello.f90 -o hello && ./hello
 
+FStar
+fstar.exe hello.fst --codegen OCaml --extract_module Hello && ocamlopt Hello.ml -o hello && ./hello
+
 Go
 go run .
 
@@ -56,9 +56,6 @@ ghc -dynamic hello.hs && ./hello
 
 Julia
 julia hello.jl
-
-Koka
-koka hello.kk && .koka/v2.4.2/gcc-debug/hello
 
 Mercury
 mmc --make hello && ./hello
@@ -77,6 +74,9 @@ perl hello.pl
 
 Pharo
 pharo Pharo.image hello.st
+
+Prolog
+swipl hello.pl
 
 Racket
 racket hello.rkt
