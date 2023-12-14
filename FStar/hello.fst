@@ -1,7 +1,10 @@
 module Hello
 
 open FStar.IO
+open FStar.All
 
 let main
-  : unit  -> Tot (IO unit)
+  : unit  -> ML unit
   = fun _ -> print_string "Hello, world!\n"
+
+let _ = main ()

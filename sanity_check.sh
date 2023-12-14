@@ -10,7 +10,7 @@ echo -e "\n\n=============== Eiffel ===============\n\n" && cd ../Eiffel && yes 
 echo -e "\n\n=============== Elixir ===============\n\n" && cd ../Elixir && elixir hello.exs && \
 echo -e "\n\n=============== Factor ===============\n\n" && cd ../Factor && factor hello.factor && \
 echo -e "\n\n=============== Fortran ===============\n\n" && cd ../Fortran && gfortran hello.f90 -o hello > /dev/null 2>&1 && ./hello && \
-echo -e "\n\n=============== F* ===============\n\n" && cd ../FStar && fstar.exe hello.fst --codegen OCaml --extract_module Hello > /dev/null 2>&1 && ocamlopt Hello.ml -o hello > /dev/null 2>&1 && ./hello && \
+echo -e "\n\n=============== F* ===============\n\n" && cd ../FStar && fstar.exe hello.fst --codegen OCaml --extract_module Hello > /dev/null 2>&1 && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello > /dev/null 2>&1 && ./Hello && \
 echo -e "\n\n=============== Go ===============\n\n" && cd ../Go && go run . && \
 echo -e "\n\n=============== Haskell ===============\n\n" && cd ../Haskell && ghc -dynamic hello.hs > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== Julia ===============\n\n" && cd ../Julia && julia hello.jl && \
@@ -27,4 +27,4 @@ echo -e "\n\n=============== Swift ===============\n\n" && cd ../Swift && swift 
 echo -e "\n\n=============== TypeScript ===============\n\n" && cd ../TypeScript && bun hello.ts && \
 echo -e "\n\n=============== UIUA ===============\n\n" && cd ../UIUA && uiua run hello.ua && \
 echo -e "\n\n=============== Zig ===============\n\n" && cd ../Zig && zig run hello.zig && \
-echo && cd $originalWorkingDirectory
+echo && echo && cd $originalWorkingDirectory
