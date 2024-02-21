@@ -25,9 +25,6 @@ dotnet run
 Dart
 dart run
 
-Dex
-dex script hello.dx
-
 Eiffel
 ec hello.e && sudo chmod u+x hello && ./hello
 
@@ -41,6 +38,9 @@ hello:main().
 
 Factor
 factor hello.factor
+
+Forth
+gforth hello.fth bye
 
 Fortran
 gfortran hello.f90 -o hello && ./hello
@@ -56,6 +56,9 @@ ghc -dynamic hello.hs && ./hello
 
 Julia
 julia hello.jl
+
+Logtalk
+swilgt hello.lgt
 
 Mercury
 mmc --make hello && ./hello
@@ -74,9 +77,6 @@ perl hello.pl
 
 Pharo
 pharo Pharo.image hello.st
-
-Prolog
-swipl hello.pl
 
 Racket
 racket hello.rkt
