@@ -7,8 +7,9 @@ echo -e "\n\n=============== C# ===============\n\n" && cd ../CSharp && dotnet r
 echo -e "\n\n=============== Dart ===============\n\n" && cd ../Dart/hello && dart run && \
 echo -e "\n\n=============== Eiffel ===============\n\n" && cd ../../Eiffel && ec hello.e -batch > /dev/null 2>&1 && sed -i '6d' hello.ecf && ec hello.e -batch > /dev/null 2>&1 && EIFGENs/hello/W_code/hello && \
 echo -e "\n\n=============== Elixir ===============\n\n" && cd ../Elixir && elixir hello.exs && \
+echo -e "\n\n=============== Erlang ===============\n\n" && cd ../Erlang && erlc hello.erl && erl -noshell -s hello start && \
 echo -e "\n\n=============== Factor ===============\n\n" && cd ../Factor && factor hello.factor && \
-echo -e "\n\n=============== Forth ===============\n\n" && cd ../Forth && gforth hello.fth bye && \
+echo -e "\n\n=============== Forth ===============\n\n" && cd ../Forth && gforth hello.fth && \
 echo -e "\n\n=============== Fortran ===============\n\n" && cd ../Fortran && gfortran hello.f90 -o hello > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== F* ===============\n\n" && cd ../FStar && fstar.exe hello.fst --codegen OCaml --extract_module Hello > /dev/null 2>&1 && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello > /dev/null 2>&1 && ./Hello && \
 echo -e "\n\n=============== Go ===============\n\n" && cd ../Go && go run . && \
@@ -19,7 +20,7 @@ echo -e "\n\n=============== Mercury ===============\n\n" && cd ../Mercury && mm
 echo -e "\n\n=============== Mojo ===============\n\n" && cd ../Mojo && python hello.py && \
 echo -e "\n\n=============== OCaml ===============\n\n" && cd ../Ocaml && ocaml hello.ml && \
 echo -e "\n\n=============== Perl ===============\n\n" && cd ../Perl && perl hello.pl && \
-echo -e "\n\n=============== Pharo ===============\n\n" && cd ../Pharo && pharo Pharo.image hello.st && \
+echo -e "\n\n=============== Pharo ===============\n\n" && cd ../Pharo && pharo /home/root/pharo/Pharo.image hello.st && \
 echo -e "\n\n=============== Racket ===============\n\n" && cd ../Racket && racket hello.rkt && \
 echo -e "\n\n=============== Ruby ===============\n\n" && cd ../Ruby && ruby hello.rb && \
 echo -e "\n\n=============== Rust ===============\n\n" && cd ../Rust && rustc hello.rs > /dev/null 2>&1 && ./hello && \

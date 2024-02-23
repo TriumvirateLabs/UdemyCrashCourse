@@ -1,1 +1,1 @@
-s" Hello, world!" type CR
+s" Hello, world!" type CR bye

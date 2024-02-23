@@ -1,2 +1,2 @@
-Transcript show: 'Hello, world!!<n>' expandMacros.
+Transcript show: 'Hello, world!!'; cr.
 Smalltalk snapshot: false andQuit: true
