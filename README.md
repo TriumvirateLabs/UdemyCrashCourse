@@ -46,7 +46,7 @@ Fortran
 gfortran hello.f90 -o hello && ./hello
 
 FStar
-fstar.exe hello.fst --codegen OCaml --extract_module Hello && ocamlopt Hello.ml -o Hello && ./Hello
+fstar.exe hello.fst --codegen OCaml --extract_module Hello && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello && ./Hello
 
 Go
 go run .

@@ -19,7 +19,7 @@ echo -e "\n\n=============== Mercury ===============\n\n" && cd ../Mercury && mm
 echo -e "\n\n=============== Mojo ===============\n\n" && cd ../Mojo && python hello.py && \
 echo -e "\n\n=============== OCaml ===============\n\n" && cd ../Ocaml && ocaml hello.ml && \
 echo -e "\n\n=============== Perl ===============\n\n" && cd ../Perl && perl hello.pl && \
-echo -e "\n\n=============== Pharo ===============\n\n" && cd ../Pharo && pharo /home/root/pharo/Pharo.image hello.st && \
+echo -e "\n\n=============== Pharo ===============\n\n" && cd ../Pharo && pharo Pharo.image hello.st && \
 echo -e "\n\n=============== Racket ===============\n\n" && cd ../Racket && racket hello.rkt && \
 echo -e "\n\n=============== Ruby ===============\n\n" && cd ../Ruby && ruby hello.rb && \
 echo -e "\n\n=============== Rust ===============\n\n" && cd ../Rust && rustc hello.rs > /dev/null 2>&1 && ./hello && \
