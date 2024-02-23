@@ -26,7 +26,7 @@ Dart
 dart run
 
 Eiffel
-ec hello.e && sudo chmod u+x hello && ./hello
+ec hello.e -batch && sed -i '6d' hello.ecf && ec hello.e -batch && EIFGENs/hello/W_code/hello
 
 Elixir
 elixir hello.exs

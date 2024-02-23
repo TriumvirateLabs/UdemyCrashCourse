@@ -5,7 +5,7 @@ echo -e "\n\n=============== Chapel ===============\n\n" && cd ../Chapel && chpl
 echo -e "\n\n=============== C++ ===============\n\n" && cd ../CPlusPlus && g++ hello.cpp -o hello -Wall -Wextra -Werror -std=c++20 > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== C# ===============\n\n" && cd ../CSharp && dotnet run && \
 echo -e "\n\n=============== Dart ===============\n\n" && cd ../Dart/hello && dart run && \
-echo -e "\n\n=============== Eiffel ===============\n\n" && cd ../../Eiffel && yes | ec hello.e > /dev/null 2>&1 && sudo chmod u+x hello && sudo ./hello && \
+echo -e "\n\n=============== Eiffel ===============\n\n" && cd ../../Eiffel && ec hello.e -batch > /dev/null 2>&1 && sed -i '6d' hello.ecf && ec hello.e -batch > /dev/null 2>&1 && EIFGENs/hello/W_code/hello && \
 echo -e "\n\n=============== Elixir ===============\n\n" && cd ../Elixir && elixir hello.exs && \
 echo -e "\n\n=============== Factor ===============\n\n" && cd ../Factor && factor hello.factor && \
 echo -e "\n\n=============== Forth ===============\n\n" && cd ../Forth && gforth hello.fth bye && \
