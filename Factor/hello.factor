@@ -1,5 +1,5 @@
 USE: io
-IN: hello-world
+IN: hello
 
 : hello ( -- ) "Hello, world!" print ;
 

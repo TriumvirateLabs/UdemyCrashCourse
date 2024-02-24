@@ -1,10 +1,10 @@
 class
-    HELLO
+  HELLO
 create
-    make
+  make
 feature
-    make
-        do
-            io.put_string ("Hello, world!%N")
-        end
+  make
+    do
+      io.put_string ("Hello, world!%N")
+    end
 end
