@@ -1,6 +1,6 @@
 clear && originalWorkingDirectory=`pwd` && \
 echo -e "=============== Ada ===============\n\n" && cd /home/root/CrashCourse/Ada && gnatmake hello.adb > /dev/null 2>&1 && ./hello && \
-echo -e "\n\n=============== APL ===============\n\n" && cd ../APL && dyalog -script hello.dyalog && \
+echo -e "\n\n=============== APL ===============\n\n" && cd ../APL && ./hello.apl && \
 echo -e "\n\n=============== BQN ===============\n\n" && cd ../BQN && BQN hello.bqn && \
 echo -e "\n\n=============== Chapel ===============\n\n" && cd ../Chapel && chpl hello.chpl -o hello > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== C++ ===============\n\n" && cd ../CPlusPlus && g++ hello.cpp -o hello -Wall -Wextra -Werror -std=c++20 > /dev/null 2>&1 && ./hello && \

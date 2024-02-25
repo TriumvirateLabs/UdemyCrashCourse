@@ -10,7 +10,7 @@ Ada
 gnatmake hello.adb && ./hello
 
 APL
-dyalog -script hello.dyalog
+./hello.apl
 
 BQN
 BQN hello.bqn
