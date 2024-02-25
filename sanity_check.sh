@@ -1,5 +1,6 @@
 clear && originalWorkingDirectory=`pwd` && \
 echo -e "=============== Ada ===============\n\n" && cd /home/root/CrashCourse/Ada && gnatmake hello.adb > /dev/null 2>&1 && ./hello && \
+echo -e "\n\n=============== APL ===============\n\n" && cd ../APL && dyalog -script hello.dyalog && \
 echo -e "\n\n=============== BQN ===============\n\n" && cd ../BQN && BQN hello.bqn && \
 echo -e "\n\n=============== Chapel ===============\n\n" && cd ../Chapel && chpl hello.chpl -o hello > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== C++ ===============\n\n" && cd ../CPlusPlus && g++ hello.cpp -o hello -Wall -Wextra -Werror -std=c++20 > /dev/null 2>&1 && ./hello && \
@@ -16,7 +17,6 @@ echo -e "\n\n=============== Go ===============\n\n" && cd ../Go && go run . && 
 echo -e "\n\n=============== Haskell ===============\n\n" && cd ../Haskell && ghc -dynamic hello.hs > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== Julia ===============\n\n" && cd ../Julia && julia hello.jl && \
 echo -e "\n\n=============== Logtalk ===============\n\n" && cd ../Logtalk && swilgt hello.lgt && \
-echo -e "\n\n=============== Mercury ===============\n\n" && cd ../Mercury && mmc --make hello > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== Mojo ===============\n\n" && cd ../Mojo && python hello.py && \
 echo -e "\n\n=============== OCaml ===============\n\n" && cd ../Ocaml && ocaml hello.ml && \
 echo -e "\n\n=============== Perl ===============\n\n" && cd ../Perl && perl hello.pl && \

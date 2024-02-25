@@ -9,6 +9,9 @@ NOTES:
 Ada
 gnatmake hello.adb && ./hello
 
+APL
+dyalog -script hello.dyalog
+
 BQN
 BQN hello.bqn
 
@@ -56,9 +59,6 @@ julia hello.jl
 
 Logtalk
 swilgt hello.lgt
-
-Mercury
-mmc --make hello && ./hello
 
 Mojo
 python hello.py
