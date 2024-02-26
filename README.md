@@ -28,7 +28,7 @@ Dart
 dart run
 
 Eiffel
-ec hello.e -batch && sed -i '6d' hello.ecf && ec hello.e -batch && EIFGENs/hello/W_code/hello
+ec hello.e -batch && sed -i '6d' hello.ecf && ec hello.e -batch && EIFGENs/hello/W_code/hello && rm -rfv !('hello.e')
 
 Elixir
 elixir hello.exs
