@@ -10,7 +10,7 @@ Ada
 gnatmake hello.adb && ./hello
 
 APL
-./hello.apl
+chmod +x hello.apl && ./hello.apl
 
 BQN
 BQN hello.bqn
