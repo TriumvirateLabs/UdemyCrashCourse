@@ -12,6 +12,9 @@ gnatmake hello.adb && ./hello
 APL
 chmod +x hello.apl && ./hello.apl
 
+Bend
+bend run-c hello.bend
+
 BQN
 BQN hello.bqn
 
@@ -27,17 +30,11 @@ dotnet run
 Dart
 dart run
 
-Eiffel
-ec hello.e -batch && sed -i '6d' hello.ecf && ec hello.e -batch && EIFGENs/hello/W_code/hello && find . ! -name '*.e' -type d,f -delete
-
 Elixir
 elixir hello.exs
 
 Erlang
 erlc hello.erl && erl -noshell -s hello start
-
-Factor
-factor hello.factor
 
 Forth
 gforth hello.fth
@@ -57,9 +54,6 @@ ghc -dynamic hello.hs && ./hello
 Julia
 julia hello.jl
 
-Logtalk
-swilgt hello.lgt
-
 Mojo
 python hello.py
 
@@ -74,6 +68,12 @@ perl hello.pl
 
 Pharo
 pharo /home/root/pharo/Pharo.image hello.st
+
+Prolog
+swipl hello.pro
+
+Q#
+qsc hello.qs && ./hello
 
 Racket
 racket hello.rkt
