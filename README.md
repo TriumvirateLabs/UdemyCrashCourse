@@ -12,19 +12,13 @@ gnatmake hello.adb && ./hello
 APL
 chmod +x hello.apl && ./hello.apl
 
-Bend
-bend run-c hello.bend
-
-BQN
-BQN hello.bqn
-
 Chapel
 chpl hello.chpl -o hello && ./hello
 
-CPlusPlus
+C++
 g++ hello.cpp -o hello -Wall -Wextra -Werror -std=c++20 && ./hello
 
-CSharp
+C#
 dotnet run
 
 Dart
@@ -36,13 +30,19 @@ elixir hello.exs
 Erlang
 erlc hello.erl && erl -noshell -s hello start
 
+Factor
+chmod +x hello.factor && ./hello.factor
+
 Forth
 gforth hello.fth
 
 Fortran
 gfortran hello.f90 -o hello && ./hello
 
-FStar
+F#
+dotnet run
+
+F*
 fstar.exe hello.fst --codegen OCaml --extract_module Hello && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello && ./Hello
 
 Go
@@ -54,13 +54,13 @@ ghc -dynamic hello.hs && ./hello
 Julia
 julia hello.jl
 
-Mojo
-python hello.py
+Lean
+lean --run hello.lean
 
-Ocaml
-ocaml hello.ml
+Mercury
+mmc hello.m && ./hello
 
-OccamPi
+Occam-π
 occbuild --program hello.occ && ./hello
 
 Perl
@@ -72,11 +72,14 @@ pharo /home/root/pharo/Pharo.image hello.st
 Prolog
 swipl hello.pro
 
-Q#
-qsc hello.qs && ./hello
+Python
+python hello.py
 
 Racket
 racket hello.rkt
+
+Raku
+raku hello.raku
 
 Ruby
 ruby hello.rb
@@ -89,9 +92,6 @@ swift hello.swift
 
 TypeScript
 bun hello.ts
-
-UIUA
-uiua run hello.ua
 
 Zig
 zig run hello.zig
