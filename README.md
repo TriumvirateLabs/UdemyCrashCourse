@@ -43,7 +43,7 @@ F#
 dotnet run
 
 F*
-fstar.exe hello.fst --codegen OCaml --extract_module Hello && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello && ./Hello
+fstar.exe hello.fst --codegen FSharp --extract_module Hello && dotnet fsi X
 
 Go
 go run .

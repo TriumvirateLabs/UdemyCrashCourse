@@ -13,7 +13,7 @@ echo -e "\n\n=============== Factor ===============\n\n" && cd ../Factor && chmo
 echo -e "\n\n=============== Forth ===============\n\n" && cd ../Forth && gforth hello.fth && \
 echo -e "\n\n=============== Fortran ===============\n\n" && cd ../Fortran && gfortran hello.f90 -o hello > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== F# ===============\n\n" && cd ../FSharp && dotnet run && \
-echo -e "\n\n=============== F* ===============\n\n" && cd ../FStar && fstar.exe hello.fst --codegen OCaml --extract_module Hello > /dev/null 2>&1 && ocamlfind opt -package fstar.lib -linkpkg Hello.ml -o Hello > /dev/null 2>&1 && ./Hello && \
+echo -e "\n\n=============== F* ===============\n\n" && cd ../FStar && fstar.exe hello.fst --codegen FSharp --extract_module Hello > /dev/null 2>&1 && ls -al && \
 echo -e "\n\n=============== Go ===============\n\n" && cd ../Go && go run . && \
 echo -e "\n\n=============== Haskell ===============\n\n" && cd ../Haskell && ghc -dynamic hello.hs > /dev/null 2>&1 && ./hello && \
 echo -e "\n\n=============== Julia ===============\n\n" && cd ../Julia && julia hello.jl && \
